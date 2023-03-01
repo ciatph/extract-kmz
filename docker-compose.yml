@@ -9,4 +9,5 @@ services:
       dockerfile: Dockerfile
       target: development
     volumes:
-      - ./script/app:/opt/script
+      - ./script:/opt/script
+      - /opt/script/node_modules
