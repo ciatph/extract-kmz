@@ -19,7 +19,7 @@ const xmlErrorHandler = (err) => {
  */
 const xmlSuccessHandler = async ({ kml }, jsonPath) => {
   try {
-    let coordinates = []
+    const coordinates = []
 
     if (kml.Document.Folder.Folder === undefined) {
       console.log('[ERROR] KMZ format is not supported.')
@@ -29,7 +29,7 @@ const xmlSuccessHandler = async ({ kml }, jsonPath) => {
     // Extract style ID's and icons
     const styles = kml.Document.Style.reduce((list, style) => {
       if (style.id) {
-        return [ ...list, {
+        return [...list, {
           id: style.id,
           icon: style.IconStyle.Icon.href
         }]
@@ -62,7 +62,7 @@ const xmlSuccessHandler = async ({ kml }, jsonPath) => {
       }
     }
 
-    console.log(`[LOG] KML parsing success.`)
+    console.log('[LOG] KML parsing success.')
 
     writeToJSON(jsonPath.styles, styles)
     writeToJSON(jsonPath.coordinates, coordinates)

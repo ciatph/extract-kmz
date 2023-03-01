@@ -4,7 +4,9 @@
   "description": "Extract geo (lat, lng) coordinates and text information from KMZ files to use with various points clustering libraries for webmaps.",
   "main": "index.js",
   "scripts": {
-    "extract": "cd script && npm run extract"
+    "extract": "cd script && npm run extract",
+    "lint:fix": "cd script && npm run lint:fix",
+    "lint": "cd script && npm run lint"
   },
   "author": "",
   "license": "ISC"

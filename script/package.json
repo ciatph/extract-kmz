@@ -8,13 +8,18 @@
     "npm": "9.5.0"
   },
   "scripts": {
-    "extract": "cross-env NODE_ENV=test node src/index.js"
+    "extract": "cross-env NODE_ENV=test node src/index.js",
+    "lint:fix": "eslint --fix src .eslintrc.js",
+    "lint": "eslint src .eslintrc.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "adm-zip": "^0.5.10",
     "cross-env": "^7.0.3",
+    "eslint": "^8.35.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-promise": "^6.1.1",
     "xml2js": "^0.4.23"
   }
 }
