@@ -49,6 +49,14 @@ Full usage: `npm run extract --filename=<target_kmz_file>.kmz`
 - Writes processed KML styles to `/data/<target_kmz_file>/styles.json`
 - Writes processed KML point coordinates to `/data/<target_kmz_file>/coordinates.json`
 
+### `npm run lint`
+
+Check lint errors on the `"/script"` directory.
+
+### `npm run lint:fix`
+
+Fix lint errors on the `"/script"` directory.
+
 ## Installation and Usage with Docker
 
 We can optionally use Docker to run the dockerized script app. The following methods require a correctly installed setup of Docker and Docker compose on your development machine.
