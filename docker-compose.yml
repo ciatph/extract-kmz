@@ -1,0 +1,13 @@
+version: "3"
+services:
+  # NPM scripts
+  extract-kmz-script:
+    container_name: extract-kmz-script
+    image: ciatphdev/extract-kmz-script:dev
+    build:
+      context: ./script
+      dockerfile: Dockerfile
+      target: development
+    volumes:
+      - ./script:/opt/script
+      - /opt/script/node_modules
