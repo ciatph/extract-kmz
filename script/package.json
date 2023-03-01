@@ -1,0 +1,20 @@
+{
+  "name": "extract-kmz",
+  "version": "1.0.0",
+  "description": "Extract geo (lat, lng) coordinates and text information from KMZ files to use with various points clustering libraries for webmaps.",
+  "main": "index.js",
+  "engines": {
+    "node": "18.14.2",
+    "npm": "9.5.0"
+  },
+  "scripts": {
+    "extract": "cross-env NODE_ENV=test node src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "adm-zip": "^0.5.10",
+    "cross-env": "^7.0.3",
+    "xml2js": "^0.4.23"
+  }
+}
