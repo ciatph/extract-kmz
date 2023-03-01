@@ -20,6 +20,6 @@ jobs:
 
       - name: Install Dependencies and Lint
         run: |
-          cd client
+          cd script
           npm install
           npm run lint
